@@ -1,0 +1,180 @@
+* {
+    color: #D9E2E6;
+}
+body {
+    background-color: #212529;
+    color: #D9E2E6;
+}
+.italique {
+  font-style: italic;
+}
+.gris {
+  background-color: #2B3035 !important;
+}
+.overflow {
+  overflow: hidden;
+}
+a {
+    text-decoration: none;
+    background-color: #212529;
+    color: #D9E2E6;
+}
+a.exclude {
+  text-decoration: underline; 
+  color:blue !important;
+}
+.borderRadius {
+  border-radius: 3px;
+}
+.italique {
+  font-style: italic;
+}
+.red {
+  color: red !important;
+}
+.marginLeft {
+  margin-left: 5px;
+}
+.headerRight {
+  width: 8em;
+}
+
+/*  Tout ce qui est input  */
+input:focus, .form-control:focus, .form-control {
+  background-color: #212529;
+  color: #D9E2E6;
+  border: 1px solid grey;
+}
+
+.texteBlanc {
+    color:#D9E2E6 !important;
+}
+.form-control::placeholder, .form-control::content , input, textarea, .input-group{
+    color: #D9E2E6;
+    border: none !important;
+    background-color: #212529;
+}
+.borderNone {
+  border: none !important;
+}
+input:focus {
+    color: #212529;
+}
+.boutonInvisible  {
+  border: none;
+  padding: 0;
+  background: none;
+}
+.boutonInvisible:hover {
+  text-decoration: none;
+}
+.checked-title {
+  text-decoration: line-through; /* Ajoutez d'autres styles nécessaires */
+}
+
+.signUp {
+    /* min-height: 100vh; */
+    min-height: 80vh;
+}
+.input-group-text {
+    background-color: #2B3035;
+}
+.signUp {
+    /* min-height: 100vh; */
+    min-height: 80vh;
+}
+/* les cartes dans la vue view_notes */
+.card {
+    width: 25em;
+    height: 25em;
+    color:#D9E2E6;
+    background-color: #212529;;
+
+}
+.card-header {
+    background-color: #2B3035;
+    color:#D9E2E6;
+}
+.card-footer {
+  background-color: #2B3035 ;
+}
+
+/*  ------Le menu hamburger---------- */
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Déplacez le menu hors de la vue par défaut */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .menu {
+    width: 250px;
+    height: 100%;
+    padding-top: 60px; /* Ajustez la marge supérieure en fonction de la hauteur de votre barre de navigation fixe si vous en avez une */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+  }
+  
+  #menu-toggle:checked + .menu-icon {
+    transform: translateX(250px);
+  }
+  
+  #menu-toggle:checked + .menu-container {
+    left: 0;
+  }
+  /* ---- Fin menu hamburger ---- */
+
+#footerMesNotes {
+  position : fixed;
+  bottom : 2em;
+  right: 2em;
+}
+
+/* Styles pour les écrans de petite taille (largeur inférieure à 767px) */
+ @media (max-width: 720px) {
+    .card {
+      width: 10em;
+      height: 12em;
+    }
+}
+/*
+@media (min-width: 721px) and (max-width:900px ) {
+  .card {
+    width: 21em;
+    height: 15em;
+  }
+} */
+
+#imgSize {
+  width:20%;
+}
